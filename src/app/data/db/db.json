@@ -1,0 +1,12 @@
+{
+  "auth": {
+    "jwt": "myToken",
+    "user": {
+      "id": 6,
+      "username": "hahs",
+      "email": "hahs@email.com",
+      "provider": "",
+      "confirmed": true
+    }
+  }
+}

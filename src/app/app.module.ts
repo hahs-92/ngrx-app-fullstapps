@@ -14,6 +14,8 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from './presentation/layout/layout.module';
 
 import { appReducer, appEffects } from './domain/store/index';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AppInterceptorService } from './core/interceptors/app.interceptor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -31,7 +33,13 @@ import { appReducer, appEffects } from './domain/store/index';
     CoreModule,
     LayoutModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AppInterceptorService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
