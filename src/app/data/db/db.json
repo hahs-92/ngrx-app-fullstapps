@@ -8,5 +8,35 @@
       "provider": "",
       "confirmed": true
     }
-  }
+  },
+  "kpis": [
+    {
+      "id": 4,
+      "title": "Play Station 5",
+      "value": 430,
+      "percentage": 10,
+      "publishedAt": "06/10/2022"
+    },
+    {
+      "id": 5,
+      "title": "Tv Asus",
+      "value": 538,
+      "percentage": 30,
+      "publishedAt": "10/05/2022"
+    },
+    {
+      "id": 6,
+      "title": "Xbox One",
+      "value": 420,
+      "percentage": 10,
+      "publishedAt": "10/10/2022"
+    },
+    {
+      "id": 7,
+      "title": "Pc Gamer",
+      "value": 663,
+      "percentage": 6,
+      "publishedAt": "01/10/2022"
+    }
+  ]
 }
